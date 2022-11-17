@@ -6,7 +6,7 @@ void loop() {
   while (x > 6) {
     x -= 7;
     delay(5);
-    Serial.println("1000-7 = " + (String)x);
+    Serial.println("1000 - 7 = " + (String)x);
   }
   if (x == 6) {
     Serial.print("I Ded Intel Sid");
