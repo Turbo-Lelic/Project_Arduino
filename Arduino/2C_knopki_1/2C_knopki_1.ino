@@ -10,7 +10,7 @@ void loop()
   int btn_q;
   btn_q = digitalRead(btn);
 
-  if (btn_q == LOW)
+  if (btn_q == HIGH)
   {
     for (int i = 0; i < 6; i++)
     {
