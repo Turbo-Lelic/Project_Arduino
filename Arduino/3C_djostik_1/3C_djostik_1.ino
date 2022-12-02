@@ -7,6 +7,7 @@ int arr[2] = {x, y};
 
 void setup(){
   Serial.begin(9600);
+
   for (int i = 0; i < 2; i++) {
     pinMode(arr[i], INPUT);
   }
@@ -16,8 +17,8 @@ void setup(){
 }
 void loop() {
   int x_state = analogRead(x), y_state = analogRead(y);
-  Serial.println("Ocd x - " + (String) x_state);
-  Serial.println("Ocd y - " + (String) y_state);
+  Serial.println("Ocd x - " + (String)x_state);
+  Serial.println("Ocd y - " + (String)y_state);
   
   if (x_state >= 0 && x_state <= 500) {
     lcd.setCursor(0, 0);
