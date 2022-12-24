@@ -41,15 +41,15 @@ void loop() {
 
   if (btn3_state == LOW && cnt_bool == 0) {
     fire_cnt -= 1;
-  } else if (bnt3_state == LOW && cnt_bool == 1) {
+  } else if (btn3_state == LOW && cnt_bool == 1) {
     water_cnt -= 1;
   }
   
   if (fire_cnt == 5 && fire_state == 5) {
-    repet(int ledpin1);
+    repet(ledpin1);
   }
   if (water_cnt == 5 && water_state == 5) {
-    repet(int ledpin2);
+    repet(ledpin2);
   }
 }
 void repet(int ledpin) {
